@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">温度转换</string>
+    <string name="app_name">温度转换程序</string>
     <string name="hello">生日快乐！</string>
     <string name="text2">高一凡</string>
 </resources>
