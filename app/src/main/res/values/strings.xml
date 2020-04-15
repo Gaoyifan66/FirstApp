@@ -2,4 +2,8 @@
     <string name="app_name">Hello</string>
     <string name="hello">Happy Birthday！</string>
     <string name="text2">Your Fan</string>
+    <string name="btn_dollar_label">Dollar</string>
+    <string name="btn_euro_label">Euro</string>
+    <string name="btn_won_label">Won</string>
+    <string name="rmb_hint">Input RMB</string>
 </resources>

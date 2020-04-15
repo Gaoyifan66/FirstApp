@@ -1,11 +1,11 @@
 package com.swufe.firstapp;
 
-        import androidx.appcompat.app.AppCompatActivity;
         import android.os.Bundle;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.EditText;
-        import android.widget.TextView;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,14 +20,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void clik(View x){
-        String temp = inp.getText().toString();
+        String temp = inp.getText().toString();//获取输入内容
         if(temp!=null){
-            out.setText(String.valueOf(gettemp(temp)));
+            out.setText(String.valueOf(gettemp(temp)));//在文本框中输出华氏度
         }
     }
 
     private float gettemp(String temp) {
-        float tem = Float.parseFloat(temp);
+        float tem = Float.parseFloat(temp);//摄氏度向华氏度转变运算
         return(tem*1.8f)+32.0f;
 
     }
