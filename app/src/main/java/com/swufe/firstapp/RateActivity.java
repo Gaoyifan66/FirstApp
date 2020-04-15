@@ -1,6 +1,8 @@
 package com.swufe.firstapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -9,6 +11,12 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class RateActivity extends AppCompatActivity {
+
+    private final String TAG = "Rate";
+    private float dollarRate = 0.1f;
+    private float euroRate = 0.2f;
+    private float wonRate = 0.3f;
+
 
     EditText rmb;
     TextView show;
@@ -23,23 +31,38 @@ public class RateActivity extends AppCompatActivity {
 
     public void onClick(View btn){
         //获取输入内容
+        Log.i(TAG,"onClick");
         String str = rmb.getText().toString();
+        Log.i(TAG,"onClick: str=" + str);
         float r = 0;
         if(str.length()>0) {
             r = Float.parseFloat(str);
         }else{
             //提示用户输入内容
-            Toast.makeText(this,"请输入金额",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"请输入内容",Toast.LENGTH_SHORT).show();
         }
-        float val=0;
+        Log.i(TAG,"onClick: r=" + r);
+        //计算
         if(btn.getId()==R.id.btn_dollar){
-             val = r * (1/6.7f);
+            show.setText(String.format("%.2f",r*dollarRate));
         }else if(btn.getId()==R.id.btn_euro){
-             val = r * (1/11.0f);
+            show.setText(String.format("%.2f",r*euroRate));
         }else{
-             val = r * 500;
+            show.setText(String.format("%.2f",r*wonRate));
         }
-        show.setText(String.valueOf(val));
 
+    }
+    public void openOne(View btn){
+        //打开一个页面activity
+        Intent config = new Intent(this,ConfigActivity.class);
+
+        config.putExtra("dollar_rate_key",dollarRate);
+        config.putExtra("euro_rate_key",euroRate);
+        config.putExtra("won_rate_key",wonRate);
+
+        Log.i(TAG,"openOne: dollar_rate_key="  + dollarRate);
+        Log.i(TAG,"openOne: euro_rate_key=" + euroRate);
+        Log.i(TAG,"openOne: won_rate_key=" + wonRate);
+        startActivity(config);
     }
 }
