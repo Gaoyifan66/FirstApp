@@ -56,6 +56,7 @@ public class RateActivity extends AppCompatActivity implements Runnable{
         Log.i(TAG,"onCreate: sp euroRate=" + euroRate);
         Log.i(TAG,"onCreate: sp wonRate=" + wonRate);
 
+
         //开启子线程
         Thread t = new Thread(this);
         t.start();
