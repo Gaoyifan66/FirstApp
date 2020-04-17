@@ -51,6 +51,7 @@ public class RateActivity extends AppCompatActivity implements Runnable{
         euroRate = sharedPreferences.getFloat("euro_rate",0.0f);
         wonRate = sharedPreferences.getFloat("won_rate",0.0f);
 
+
         Log.i(TAG,"onCreate: sp dollarRate=" + dollarRate);
         Log.i(TAG,"onCreate: sp euroRate=" + euroRate);
         Log.i(TAG,"onCreate: sp wonRate=" + wonRate);
