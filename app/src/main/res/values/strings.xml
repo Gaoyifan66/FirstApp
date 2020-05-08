@@ -9,5 +9,7 @@
     <string name="btn_opencfg_lable">Config</string>
     <string name="btn_save_label">SAVE</string>
     <string name="menu_set_label">Setting</string>
-    <string name="label_open_list">OpenList</string>/>
+    <string name="label_open_list">OpenList</string>
+    <string name="title_hint">请输入关键词</string>
+    <string name="find">查询</string>/>
 </resources>

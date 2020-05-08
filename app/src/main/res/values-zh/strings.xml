@@ -3,4 +3,6 @@
     <string name="app_name">Hello</string>
     <string name="hello">生日快乐！</string>
     <string name="text2">高一凡</string>
+    <string name="title_hint">请输入关键词</string>
+    <string name="find">查询</string>
 </resources>
