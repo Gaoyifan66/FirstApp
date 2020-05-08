@@ -7,6 +7,7 @@
     <string name="btn_won_label">Won</string>
     <string name="rmb_hint">Input RMB</string>
     <string name="btn_opencfg_lable">Config</string>
-    <string name="btn_save_label" >SAVE</string>
-    <string name="menu_set_label">Setting</string>/>
+    <string name="btn_save_label">SAVE</string>
+    <string name="menu_set_label">Setting</string>
+    <string name="label_open_list">OpenList</string>/>
 </resources>
