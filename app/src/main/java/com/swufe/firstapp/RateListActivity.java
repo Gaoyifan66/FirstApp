@@ -132,6 +132,7 @@ public class RateListActivity extends ListActivity implements Runnable{
                 e.printStackTrace();
             }
 
+
         }
 
 
