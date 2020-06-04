@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RateCalcActivity" />
+        <activity android:name=".RateCalcActivity" android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
         <activity android:name=".MyLIst2Activity" />
         <activity android:name=".MyListActivity" />
         <activity android:name=".RateListActivity" />
