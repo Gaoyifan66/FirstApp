@@ -131,7 +131,10 @@ public class RateListActivity extends ListActivity implements Runnable{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+
         }
+
+
 
 
 
